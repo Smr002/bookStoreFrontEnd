@@ -1,0 +1,115 @@
+.signIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 3rem 0 1.5rem;
+    color: #4A4A4A;
+}
+
+.login {
+    background: #FFFFFF;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.text_area {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 1rem;
+    background-color: #f9fafb;
+    transition: box-shadow 0.3s ease;
+}
+
+.text_area:hover,
+.text_area:focus-within {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.text_input {
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    outline: none;
+    padding-left: 10px;
+    color: #333;
+}
+
+
+.text_input::placeholder {
+    color: #aaa;
+    font-weight: 300;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, hwb(235 0% 40%), #294ddf);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(181, 141, 237, 0.6);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(181, 141, 237, 0.8);
+}
+
+.link {
+    color: #0E4579;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #1266f1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+    .login {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+}
