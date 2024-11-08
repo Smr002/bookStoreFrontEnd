@@ -23,7 +23,7 @@ class Signin extends Component {
 
     try {
       // Send login request to backend
-      const response = await axios.post('http://localhost:3000/auth/login', { username, password });
+      const response = await axios.post('https://bookstorebackend-apim.onrender.com/auth/login', { username, password });
 
       // Check for token in the response and save it to localStorage
       const { access_token } = response.data;

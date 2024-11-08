@@ -1,7 +1,7 @@
 // src/api.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000'; // NestJS API base URL
+const API_URL = 'https://bookstorebackend-apim.onrender.com'; // NestJS API base URL
 
 // Set up axios instance with default config
 const api = axios.create({
